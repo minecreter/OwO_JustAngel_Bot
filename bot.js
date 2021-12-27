@@ -31,7 +31,7 @@ client.on("message", msg => {
             console.log(target)
             let embed = new Discord.MessageEmbed() // var -> let으로 수정하였습니다.
                 .setDescription(word[msg_array[1]][target])
-            msg.reply(embed)
+            msg.reply(word[msg_array[1]][target])
         }
             
             // msg.reply(word[msg_array[1]][target])
